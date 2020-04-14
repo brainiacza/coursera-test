@@ -5,12 +5,25 @@
 <title>The Box Model</title>
 <style>
 
+	* {
+	box-sizing: border-box; /*always prefer border box as box-sizing*/
+	margin: 0;
+	padding: 0;
+	}
+
 body {
+
   background-color: gray;
 }
 
 #box {
   background-color: blue;
+  padding: 10px; /*Always goes Top Right Bottom Left*/
+  border: 5px solid black;
+  width: 300px;
+  height: 50px;
+  margin-top: 50px;
+  overflow: auto;
 }
 #content {
   background-color: #90EE90; /*green*/
@@ -27,9 +40,9 @@ h1 {
 <h1>Box Model</h1>
 
 <div id="box">
-  <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+  <div id="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lorem mauris, egestas quis purus pharetra, porta dignissim justo. Morbi in arcu tellus. Donec non elit ligula. Praesent dapibus commodo vehicula. Nullam bibendum, ipsum vitae elementum congue, ex massa fringilla augue, sed gravida dui purus sed lacus. Donec venenatis, orci eget gravida semper, justo erat fermentum dolor, eget condimentum nibh est quis justo. Nullam id venenatis purus, eu aliquet nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis ligula metus, auctor efficitur arcu a, imperdiet sagittis ante. Proin posuere sapien quis mollis venenatis. Vivamus lacus neque, pellentesque ut vehicula sed, fermentum id justo. Cras varius ipsum non ante mollis, at pellentesque lectus semper.</div>
 </div>
-
+<div></div>
 
 </body>
 </html>
