@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <title>Git & BrowserSync</title>
+</head>
+<body>
+  <h1 class="mainHeader">Git & GitHub</h3>
+  <article>
+    <h3 class="mainHeader">This guide assumes that Git, GitHub & BrowserSunc(through Node.js) is already set-up. I will only put some difficult to remember snippets & tid-bits here</h4>
+      <h4>Git & GitHub</h4>
+    <ul>
+      <li>Pull</li>
+      <h5>Basically making a copy of your GitHub repository on your computer for editing, tracking & eventually re-uploading</h5>
+      <ol>
+        <li>To pull a repository from GitHub, use cd(change Directory) and Dir(Directory List) to go about navigating to the file path you would like to pull the repo to within the comman prompt - This can be any file path - Windows Button + R, "CMD", Enter </li>
+        <li>Get the URL/link to the repo, this is usually found on the top left of the repo on a button denoting 'Clone or Download this Repository'</li>
+        <li>Run the the comman "git pull yoururlhere.com"</li>
+        <li>The pull request will be processed and the repo will be downloaded to the directory of your chosing</li>
+      </ol>
+      <li>Status</li>
+      <h5>Most commonly used Git command. Checks the status of your repository on GitHub vs. the status of the cloned/pulled repository on your local machine. You will then see if there are 'Untracked' and/or 'Uncommited' files within your local repo to track, commit or push or the opposite if you were working on the GitHub repo from a different PC, or with someone else.</h5>
+      <ol>
+        <li>simply ensure you are within the git repostory in command prompt</li>
+        <li>Run the ommand 'git status'</li>
+      </ol>
+      <li>Add</li>
+      <h5>To add a file that you have worked on but have not told Git is part of your repository yet. It will not form part of the repository.</h5>
+      <ol>
+        <li>Firstly ensure you run 'git status', in the repo file directory on command prompt</li>
+        <li>run 'git add .'(To add ALL untracked files) or 'git add C:\Users\YourUsername\YourGitRepoDirectory\YourFileName.ext'. To clarify, I have used .ext here only as a placeholder, would be .html or .pdf etc.</li>
+        <li>Your file(s) will now be tracked by git, thereby when running 'git status' you will be able to see if any changes were made etc.</li>
+      </ol>
+      <li>Commit</li>
+      <h5>When you use the commit command you are telling git that you would like to upload the tracked files(SO do this only after running 'git add') to your GitHub repository</h5>
+      <ol>
+        <li>Ensure you are in the current repo directory in command prompt</li>
+        <li>Run the commit command 'git commit -m "Your Reminder Message ABot What Changes or New files you are adding here"'. the '-m' part tells GitHub to include the message in the changelog.</li>
+        <li>After this you can run 'git status' to ensure all your files are tracked, commited and ready for the push</li>
+      </ol>
+      <li>Push</li>
+      <h5>This is simply the command you will run to push/upload your changes, new files & media to GitHub</h5>
+      <ol>
+        <li>Ensure you are in the current repo directory in command prompt</li>
+        <li>Run the command 'git push'</li>
+        <li>All the commited files will now be uploaded to GitHub and if you have GitHub pages running, you can open up your 'website' by getting your Pages link and navigating manually to all your various folders with index.html files.</li>
+      </ol>
+      <article>For more on Git & Github, please read the <a href="progit.pdf" title="It's free, so I included it here">GitPro book</a></article>
+    </ul>
+    <h4>BrowserSync</h3>
+    <h5>BrowserSync is relatively simple to use albeit the command may be nigh impossible to rememeber so I will simply explain it in TWO(2) easy steps</h5>
+    <ol>
+      <li>Ensure you are within the correct directory for your GitHub repos.(This is not a requirements as you can navigate within BrowserSync however it makes it a lot simpler).</li>
+      <li>Run: browser-sync start --server --directory --files "*"</li>
+      <li>It will open in chrome with a clickable directory to all the HTML files you have on your computer. If you navigated to he correct directory when running the command - it will simply show you the available html files within your dir. Double click & it will open the file and update everytime you save it within your IDE.</li>
+    </ol>
+  </article>
+  <div class="backButton"><a href="index.html" title="Get Back to the beginning">..</div>
+</body>
+</html>
+
+
+
+
+
+

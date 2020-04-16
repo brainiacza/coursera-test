@@ -1,0 +1,105 @@
+.mainHeader {
+	color: #545454;
+}
+.logo {
+text-align: center;
+}
+body {
+	background-color: #FAEBFF;
+}
+
+.resourceButton {
+	background-color: gray;
+ 	color: white;
+ 	font-weight: bold;
+  	padding: 5px;
+  	font-size: 10px;
+  	border: none;
+}
+/*Note: Everything below the line is now defunct in relation to my website. I am keeping it here as a reminder.*/
+/*-------------------------------------------------
+/*all anchor(a) elements with class .menu*/
+	/*a.menu:link, a.menu:visited {
+		text-decoration: none;
+		background-color: #D5FCFD;
+		border: 1px solid black;
+		color: #515151;
+		display: block;
+		width: 800px;
+		text-align: center;
+		margin-bottom: 1px;
+		font-weight: bold;
+	}
+	a.menu:hover, a.menu:active {
+		background-color: #ACFAFC;
+		color: black;
+		font-weight: bold;
+		cursor: pointer;
+	}
+--------------------------------------------------*/
+	
+	/*To remove some default browser CSS from imposing itself on my website*/
+	a {
+		text-decoration:none;
+	}
+/*Here I am telling the browser that all list items (li) that are descendent of unordered lists(ul) with id menuList(#menuList) 
+should have the below CSS applied*/
+ul#menuList li {
+		list-style: none;
+		margin-left: 200px;
+	}
+/*All divs with id="backButton"*/
+div.backButton {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+/*Code was copy/paste from w3schools.com article on drop-down lists*/
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #02FAFF;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 100%;
+  font-weight: bold;
+}
+
+/* The container <div> - needed to position the dropdown content - 
+This combo is how I managed to make the dropdown size relative to the browser window size.*/
+.dropdown {
+  position: relative;
+  display: auto;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  /*min-width: 160px;*/
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.05);
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #A3D5D6;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #00F3F8;}
+/*Above this line is only test code copy/paste*/
